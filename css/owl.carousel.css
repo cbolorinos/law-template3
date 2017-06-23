@@ -137,7 +137,7 @@
 	height: 14px;
 	margin: 0;
 	border-radius: 50%;
-	border:2px solid #053764;
+	border:2px solid #1e1e1e;
 }
 
 .owl-theme .owl-controls .owl-page.active span {
@@ -146,7 +146,7 @@
 	bottom:-3px;
 	width:20px;
 	height:20px;
-	background-color:#053764;
+	background-color:#1e1e1e;
 }
 
 /* If PaginationNumbers is true */

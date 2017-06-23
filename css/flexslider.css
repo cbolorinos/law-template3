@@ -79,7 +79,7 @@ html[xmlns] .slides {display: block;}
 	text-align:center;
 	background-color:#fff;
 }
-.flexslider.top_slider .flex-direction-nav li a:hover {background-color:#0c5da5;}
+.flexslider.top_slider .flex-direction-nav li a:hover {background-color:#4a4b4b;}
 .flexslider.top_slider .flex-direction-nav li a.flex-prev {left:0;}
 .flexslider.top_slider .flex-direction-nav li a.flex-next {left:71px;}
 .flexslider.top_slider .flex-direction-nav li a:before {
