@@ -66,16 +66,63 @@ img {
 	height:auto;
 }
 
-.img_bw{
+.img-bw{
 	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
+    transition: all 0.5s ease-in-out; 
+    -webkit-transition: all 0.5s ease-in-out;
 }
-.img_bw:hover{
-	-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(0%);
+.img-bw:hover{
+	-webkit-filter: grayscale(30%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(30%);
+}
+.img-bw h4{
+	width:100%;
+	position:fixed;
+	bottom:5px;
+	padding:10px;
+	color:#fff;
+	text-align: center;
+	background-color: rgba(0,0,0,0.7);
+	transition: all 0.5s ease-in-out; 
+    -webkit-transition: all 0.5s ease-in-out;
+    opacity: 0;
+}
+.img-bw:hover h4{
+	opacity:1;
+}
+.img-bw h3{
+	width:100%;
+	position:fixed;
+	bottom:25px;
+	padding:10px;
+	color:#fff;
+	text-align: center;
+	background-color: rgba(0,0,0,0.7);
+	transition: all 0.5s ease-in-out; 
+    -webkit-transition: all 0.5s ease-in-out;
+    opacity: 0;
+}
+.img-bw:hover h3{
+	opacity:1;
+}
+.img-bw .crewman_social{
+	width:100%;
+	position:fixed;
+	bottom:5px;
+	padding:10px;
+	color:#fff;
+	text-align: center;
+	background-color: rgba(0,0,0,0.7);
+	transition: all 0.5s ease-in-out; 
+    -webkit-transition: all 0.5s ease-in-out;
+    opacity: 0;
+}
+.img-bw:hover h4{
+	opacity:1;
 }
 
-a {color:#999; transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out;}
+a {color:#999; transition: all 0.s ease-in-out; -webkit-transition: all 0.3s ease-in-out;}
 a:hover, a:focus {text-decoration:none; color:#333;}
 
 
@@ -847,9 +894,11 @@ ul.project_info li span {color:#979797;}
 /*-----------------------------------------------------------------------------------*/
 #team {
 	padding:75px 0 100px;
-	background-color:#1e1e1e;
-	background-size:cover;
-	background-attachment:fixed !important;
+	background: #1e1e1e; /* Old browsers */
+	background: -moz-linear-gradient(top, #1e1e1e 0%, #3c3c3c 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #1e1e1e 0%,#3c3c3c 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #1e1e1e 0%,#3c3c3c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e1e1e', endColorstr='#3c3c3c',GradientType=0 ); /* IE6-9 */
 }
 
 .crewman_item {
@@ -986,10 +1035,11 @@ ul.project_info li span {color:#979797;}
 /*-----------------------------------------------------------------------------------*/
 
 #practices {
-	background-color:#1e1e1e;
-	background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position:right;
+	background: #1e1e1e; /* Old browsers */
+	background: -moz-linear-gradient(top, #1e1e1e 0%, #3c3c3c 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #1e1e1e 0%,#3c3c3c 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #1e1e1e 0%,#3c3c3c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e1e1e', endColorstr='#3c3c3c',GradientType=0 ); /* IE6-9 */
 }
 .nav-tabs > li {
 	margin-bottom:-2px;
@@ -1224,10 +1274,10 @@ footer {
 	width:100%;
 	padding:20px 0 10px;
 	background: #1e1e1e; /* Old browsers */
-	background: -moz-linear-gradient(top, #1e1e1e 0%, #e93213 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top, #1e1e1e 0%,#e93213 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, #1e1e1e 0%,#e93213 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e1e1e', endColorstr='#e93213',GradientType=0 ); /* IE6-9 */
+	background: -moz-linear-gradient(top, #1e1e1e 0%, #3c3c3c 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #1e1e1e 0%,#3c3c3c 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #1e1e1e 0%,#3c3c3c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e1e1e', endColorstr='#3c3c3c',GradientType=0 ); /* IE6-9 */
 	transform: translateX(-50%);
 	-ms-transform: translateX(-50%);
 	-webkit-transform: translateX(-50%);
@@ -1256,8 +1306,8 @@ footer h4 {color:#fff;}
 	margin: 0 7px 10px 0;
 }
 .footer-social li a{
-	border:2px solid #4a4b4b;
-	color: #4a4b4b;
+	border:2px solid #fff;
+	color: #fff;
 	display: block;
 	width: 50px;
 	height: 50px;
