@@ -291,8 +291,21 @@ blockquote:before {content:'“'; position:absolute; left:15px; top:13px; font-s
 	font-size:26px;
 	color:#fff;
 }
+.professional_hero{
+	height:700px;
+	background-image:url(../images/team_bg.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.professional_box {
+    position: relative;
+}
 
-
+.professional_box span {
+   position: absolute;
+   bottom: 130px;
+   right: 0;
+}
 
 /* __________ breadcrumb __________ */
 .divider {
