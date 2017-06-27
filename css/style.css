@@ -65,7 +65,9 @@ img {
 	max-width:100.1%;
 	height:auto;
 }
-
+.img-responsive{
+	margin:0 auto;
+}
 .img-bw{
 	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
@@ -292,19 +294,38 @@ blockquote:before {content:'“'; position:absolute; left:15px; top:13px; font-s
 	color:#fff;
 }
 .professional_hero{
-	height:700px;
 	background-image:url(../images/team_bg.jpg);
 	background-repeat:no-repeat;
 	background-size:cover;
+	background-position:top left;
 }
-.professional_box {
-    position: relative;
+.spacer{
+	height:400px;
 }
-
-.professional_box span {
-   position: absolute;
-   bottom: 130px;
-   right: 0;
+.professional_box{
+	color:white;
+	padding:15px 0 50px;
+}
+.professional_social {
+	padding:15px 0;
+}
+.professional_social li a{
+	display: block;
+	width: 50px;
+	height: 50px;
+	border: 2px solid #fff;
+	text-align: center;
+	line-height: 46px;
+	font-size: 23px;
+	color: #fff;
+}
+.professional_social li a:hover{
+	color:#e93213;
+	border-color:#e93213;
+}
+.professional_social li {
+    display: inline-block;
+    margin: 0 7px 10px 0;
 }
 
 /* __________ breadcrumb __________ */
@@ -502,6 +523,9 @@ header {
 }
 .offset-top-30{
 	margin-top: 30px;
+}
+.offset-top-40{
+	margin-top: 40px;
 }
 .offset-top-30-mobile{
 	margin-top: 0px;
@@ -1727,7 +1751,7 @@ input[type="color"]:focus {
 /*-----------------------------------------------------------------------------------*/
 /*	Portfolio Single
 /*-----------------------------------------------------------------------------------*/
-.single_page #portfolio {padding-top:50px;}
+#portfolio {padding:50px 0;}
 
 
 .portfolio_block hr {border-top:2px solid #e9e9e9;}
@@ -1741,7 +1765,20 @@ input[type="color"]:focus {
 	font-size:40px;
 	color:#333;
 }
-
+.video-container {
+  position:relative;
+  padding-bottom:56.25%;
+  padding-top:30px;
+  height:0;
+  overflow:hidden;
+}
+.video-container iframe, .video-container object, .video-container embed {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+}
 
 
 /*-----------------------------------------------------------------------------------*/
@@ -1885,6 +1922,7 @@ input[type="color"]:focus {
 	.offset-top-30-mobile{margin-top: 30px;}
 	.contact-info > a > i{display:none;}
 	.logo img{max-height:30px; top:20px;}
+	.professional_hero{background-position: center;
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -2063,6 +2101,8 @@ input[type="color"]:focus {
 	#search-form input:focus {width:42px;}
 
 	.sidebar {text-align: center;}
+
+	.spacer {height:250px;}
 	
 	
 /* __________ Menu __________ */
@@ -2192,6 +2232,8 @@ input[type="color"]:focus {
 @media (max-width: 479px) {
 
 	#search-form {display:none;}
+	.spacer {height:150px;}
+	.professional_hero{background-image:url(../images/team_bg_mobile.jpg);}
 	
 	
 /* __________ Index __________ */
