@@ -125,7 +125,7 @@ img {
 }
 
 a {color:#999; transition: all 0.s ease-in-out; -webkit-transition: all 0.3s ease-in-out;}
-a:hover, a:focus {text-decoration:none; color:#333;}
+a:hover, a:focus {text-decoration:none; color:#e93213;}
 
 
 
@@ -1505,7 +1505,7 @@ input[type="color"]:focus {
 /*-----------------------------------------------------------------------------------*/
 /*	BLOG
 /*-----------------------------------------------------------------------------------*/
-.single_page #blog {padding-top:50px;}
+#blog {padding-top:50px;}
 
 
 .blog_block hr {border-top:2px solid #e9e9e9;}
@@ -1636,12 +1636,11 @@ input[type="color"]:focus {
 
 /* __________ Single Blog Post __________ */
 .single_blog_post_date {
-	margin:-2px 0 -4px;
-	line-height:13px;
-	font-size:11px;
-	color:#999;
+	font-size:14px;
+	color:#e93213;
 }
 .single_blog_post_title {
+	font-family: 'Rokkitt', serif;
 	padding-bottom:12px;
 	line-height:60px;
 	font-size:50px;
@@ -1668,7 +1667,6 @@ input[type="color"]:focus {
 
 .single_blog_post_img img {
 	margin-bottom:23px;
-	width:100%;
 }
 
 .single_blog_post_content {
@@ -1687,14 +1685,25 @@ input[type="color"]:focus {
 	display:block;
 	padding:9px 19px;
 	font-size:16px;
-	border:1px solid #e9e9e9;
+	border:2px solid #e93213;
+	color:#e93213;
 	transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out;
 	-webkit-transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out;
 }
 .single_blog_post_tags li a:hover {
-	padding:8px 18px;
-	border:2px solid #333;
+	color:#ad260e;
+	border:2px solid #ad260e;
 }
+.img-circular{
+	 width: 100px;
+	 height: 100px;
+	 background-image: url('http://strawberry-fest.org/wp-content/uploads/2012/01/Coca-Cola-logo.jpg');
+	 background-size: cover;
+	 display: block;
+	 border-radius: 50px;
+	 -webkit-border-radius: 50px;
+	 -moz-border-radius: 50px;
+	}
 
 
 
@@ -1709,7 +1718,6 @@ input[type="color"]:focus {
 	border:1px solid #efefef;
 }
 #comments .avatar img {width:100%;}
-
 .comment_right {display:table;}
 .comment_info {padding-bottom:11px;}
 #comments .comment_author {
@@ -1818,23 +1826,25 @@ input[type="color"]:focus {
 }
 .widget_meta li:last-child {border-bottom:1px solid #e9e9e9;}
 .widget_meta li:before {
-	content:'°';
+	content:'■';
 	position:absolute;
-	left:10px;
-	top:20px;
+	left:0px;
+	top:10px;
 	font-size:27px;
-	color:#ccc;
+	color:#e93213;
 	transition: all 0.3s ease-in-out;
 	-webkit-transition: all 0.3s ease-in-out;
 }
-.widget_meta li:hover:before {color:#333;}
+.widget_meta li:hover:before {color:#e93213;}
 .widget_meta li a {
 	display:inline-block;
 	line-height:24px;
 	font-size:20px;
-	color:#666;
+	color:#000;
+	margin-top: -3px;
+	margin-right:5px;
 }
-.widget_meta li a:hover {color:#333;}
+.widget_meta li a:hover {color:#e93213;}
 
 
 
@@ -1981,7 +1991,6 @@ input[type="color"]:focus {
 	
 	.post_item_img_widget{width:220px; height:146px;}
 	.post_item_content_widget a.title {font-size:16px; line-height:20px;}
-
 	
 	
 	
@@ -2099,8 +2108,6 @@ input[type="color"]:focus {
 	.divider img{max-width: 75%; padding:120px 0;}
 	
 	#search-form input:focus {width:42px;}
-
-	.sidebar {text-align: center;}
 
 	.spacer {height:250px;}
 	
