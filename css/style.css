@@ -1228,16 +1228,16 @@ ul.project_info li span {color:#979797;}
 .post_item_img_widget img {
 	width:auto;
 	height:100%;
-	transition: opacity 0.3s ease-in-out; 
-	-webkit-transition: opacity 0.3s ease-in-out;
 }
-.recent_posts_widget:hover .post_item_img_widget img {opacity:0.5;}
 
 .post_item_content_widget a.title {
 	display:block;
 	line-height:21px;
 	font-size:18px;
 	color:#333;
+}
+.post_item_content_widget a.title:hover {
+	color:#e93213;
 }
 .post_item_content_widgeta.title:hover {color:#666;}
 .post_item_inf_widget li {
@@ -1246,7 +1246,7 @@ ul.project_info li span {color:#979797;}
 	padding-right:10px;
 	line-height:17px;
 	font-size:11px;
-	color:#999;
+	color:#e93213;
 }
 .post_item_cta {padding:20px 0 0;}
 
@@ -2073,7 +2073,7 @@ input[type="color"]:focus {
 
 /* __________ Sidebar __________ */
 	.widget_meta li a {font-size:17px; line-height:20px;}
-	.sidebar {text-align: center;}
+	.sidebar {text-align: left;}
 	.post_item_img_widget{width:220px; height:146px; float:left; margin-right:30px;}
 	.post_item_content_widget a.title {font-size:16px; line-height:20px;}
 
