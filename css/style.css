@@ -163,6 +163,10 @@ a:hover, a:focus {text-decoration:none; color:#e93213;}
 	height:100%;
 	background-color: rgba(48,166,124,0.5);
 }
+.overlay-youtube {
+	z-index:1;
+	left:0;
+}
 .relative_block {position:relative; z-index:5;}
 
 
@@ -1388,7 +1392,14 @@ footer h4 {color:#fff;}
    top:395px;  /* your iframe height */
    margin-top:-395px;  /* your iframe height */
 }
-
+.overlay-youtube {
+   background:transparent; 
+   position:relative; 
+   width:100%;
+   height:755px; /* your iframe height */
+   top:395px;  /* your iframe height */
+   margin-top:-495px;  /* your iframe height */
+}
 
 /*-----------------------------------------------------------------------------------*/
 /*	SOCIAL BUTTONS
